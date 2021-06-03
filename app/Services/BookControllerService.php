@@ -40,6 +40,7 @@ class BookControllerService implements BookControllerInterface
      */
     public function add(Request $request): JsonResponse
     {
+
         try {
             $this->book->create([
                 'full_name' => $request->full_name,
